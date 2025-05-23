@@ -40,5 +40,19 @@
       "unitTestRunner": "vitest"
     }
   },
-  "defaultProject": "angular-vitest-browser-material"
+  "defaultProject": "angular-vitest-browser-material",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "testTargetName": "test",
+        "serveStaticTargetName": "serve-static",
+        "devTargetName": "dev",
+        "typecheckTargetName": "typecheck"
+      }
+    }
+  ]
 }

@@ -76,10 +76,12 @@
       }
     },
     "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
+      "outputs": [
+        "{projectRoot}/{options.coverage.reportsDirectory}",
+        "{projectRoot}/coverage/angular-vitest-browser-material"
+      ],
       "options": {
-        "reportsDirectory": "coverage/angular-vitest-browser-material"
+        "coverage.reportsDirectory": "./coverage/angular-vitest-browser-material"
       }
     },
     "serve-static": {
